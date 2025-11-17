@@ -1,5 +1,6 @@
 from flask import Flask, request, jsonify
-from try import make_device_profile, build_headers, login, get_balance
+from epicwin import make_device_profile, build_headers, login, get_balance
+
 
 app = Flask(__name__)
 
@@ -47,3 +48,4 @@ def check_balance():
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=5000)
+
